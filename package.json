@@ -1,0 +1,61 @@
+{
+  "name": "cc-immune",
+  "version": "1.0.0",
+  "description": "CC Immune — Immune to CC. Built for the Land of Dawn. A professional Mobile Legends: Bang Bang Discord bot.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node scripts/bootstrap.js; node src/index.js",
+    "dev": "node --watch src/index.js",
+    "doctor": "node scripts/health-check.js",
+    "deploy": "node scripts/deploy-commands.js",
+    "undeploy": "node scripts/delete-commands.js",
+    "seed": "node scripts/seed-database.js",
+    "translate": "node scripts/translate-locales.js",
+    "lint": "eslint src scripts --ext .js",
+    "lint:fix": "eslint src scripts --ext .js --fix",
+    "format": "prettier --write \"src/**/*.js\" \"scripts/**/*.js\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "docker:up": "docker compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker compose -f docker/docker-compose.yml down",
+    "docs": "node scripts/generate-docs.js",
+    "bootstrap": "node scripts/bootstrap.js",
+    "start:only": "node src/index.js",
+    "package": "node scripts/package.js",
+    "map": "node scripts/generate-map.js",
+    "package:source": "node scripts/package-source.js"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discordjs",
+    "mobile-legends",
+    "mlbb",
+    "moba",
+    "ai-coach",
+    "music-bot"
+  ],
+  "author": "CC Immune Team",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.8.0",
+    "pino": "^9.5.0",
+    "shoukaku": "^4.1.1",
+    "undici": "^6.21.0",
+    "zod": "^3.23.8"
+  },
+  "optionalDependencies": {},
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "jsdom": "^25.0.1",
+    "mongodb-memory-server": "^11.2.0",
+    "prettier": "^3.3.3",
+    "vitest": "^2.1.4"
+  }
+}

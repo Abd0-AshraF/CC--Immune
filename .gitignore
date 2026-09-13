@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment — NEVER commit real secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+data/cache/
+transcripts/
+*.pid
+
+# Test / build output
+coverage/
+dist/
+build/
+.vitest/
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Lavalink local artifacts
+docker/lavalink/plugins/
+docker/lavalink/logs/
+Lavalink.jar
+.mongo-tmp/
+.bootstrap-state.json
