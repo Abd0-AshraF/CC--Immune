@@ -1,0 +1,6 @@
+{
+  "name": "CC Immune — Mobile Legends Discord Bot & Hub",
+  "description": "Immune to CC. Built for the Land of Dawn. Mobile Legends: Bang Bang Discord bot, hero database, AI coach, draft analyzer, music & Quran radio, and bilingual web hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
